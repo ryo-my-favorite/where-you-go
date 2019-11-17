@@ -1,0 +1,22 @@
+{
+    "confirmGuide": {
+        "type": "template",
+        "altText": "案内を開始します",
+        "template": {
+            "type": "confirm",
+            "text": "最寄駅までの案内を開始しますか？",
+            "actions": [
+                {
+                    "type": "message",
+                    "label": "はい",
+                    "text": "はい"
+                },
+                {
+                    "type": "message",
+                    "label": "いいえ",
+                    "text": "いいえ"
+                }
+            ]
+        }
+    }
+}
