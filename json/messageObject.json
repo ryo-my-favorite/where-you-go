@@ -1,4 +1,8 @@
 {
+    "textMessage": {
+        "type": "text",
+        "text": ""
+    },
     "confirmGuide": {
         "type": "template",
         "altText": "案内を開始します",

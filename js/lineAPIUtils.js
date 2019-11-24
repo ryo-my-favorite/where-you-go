@@ -1,5 +1,6 @@
 
 const https = require('https');
+const json = require('../json/messageObject');
 
 /**
  * @param data send Message
@@ -24,4 +25,43 @@ exports.pushMessage = (data, callback) => {
         err && console.log(err);
         callback(err);
     });
+}
+/**
+ * @param text textMessage
+ */
+exports.getTextMessageTemplate = (text) => {
+    let textMessage = {
+        'type': 'text',
+        'text': text
+    }
+    return textMessage;
+}
+
+exports.getTemplateMessageTemplate = (text, label1, label2) => {
+    let templateMessage = {
+        'type': 'template',
+        'altText': text,
+        'template': {
+          'type': 'confirm',
+          'text': text,
+          'actions': [
+            {
+              'type': 'message',
+              'label': label1,
+              'text': label1
+            },
+            {
+              'type': 'message',
+              'label': label2,
+              'text': label2
+            }
+          ]
+        }
+      };
+    
+    return templateMessage;
+}
+
+exports.getLocationMessageTemplate = () => {
+    
 }
