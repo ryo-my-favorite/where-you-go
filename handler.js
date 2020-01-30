@@ -1,6 +1,6 @@
 'use strict';
 
-const Message = require('./js/message');
+const Message = require('./js/stationAPIUtils');
 const lineApiUtils = require('./js/lineAPIUtils');
 const mapInfo = require('./js/mapInfo');
 let locationState = require('./json/location')
