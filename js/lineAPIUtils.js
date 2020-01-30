@@ -37,6 +37,11 @@ exports.getTextMessageTemplate = (text) => {
     return textMessage;
 }
 
+/**
+ * @param text textMessage
+ * @param label1 button's label like 'Yes'
+ * @param label2 button's label like 'No'
+ */
 exports.getTemplateMessageTemplate = (text, label1, label2) => {
     let templateMessage = {
         'type': 'template',
